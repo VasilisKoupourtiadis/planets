@@ -1,8 +1,14 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Planet from "./components/planet";
+
 const App = () => {
   return (
-    <>
-      <span>Planets</span>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<p>Home Page</p>} />
+        <Route path="/:planet" element={<Planet />} />
+      </Routes>
+    </Router>
   );
 };
 
