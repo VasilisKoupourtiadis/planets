@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Planet from "./components/planet";
+import Planets from "./components/planets";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<p>Home Page</p>} />
+        <Route path="/" element={<Planets />} />
         <Route path="/:planet" element={<Planet />} />
       </Routes>
     </Router>
