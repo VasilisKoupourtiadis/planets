@@ -7,7 +7,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Planets />} />
-        <Route path="/:planet" element={<Planet />} />
+        <Route path="/:planetName" element={<Planet />} />
       </Routes>
     </Router>
   );
