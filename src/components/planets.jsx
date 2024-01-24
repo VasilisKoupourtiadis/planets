@@ -14,9 +14,9 @@ const Planets = () => {
     <PageLayout>
       <section
         className="flex items-center justify-center"
-        id="planetContainer"
+        id="planetsContainer"
       >
-        <div className="columns-2 text-white">
+        <div className="columns-2 gap-16 text-white">
           <section>
             <Link to={"/neptune"}>
               <div className="py-5 flex flex-row items-center justify-end">

@@ -20,6 +20,12 @@ body,
 #root,
 #pageLayout,
 #pageLayoutContainer,
+#planetsContainer,
 #planetContainer {
   height: 100svh;
+}
+
+.planetSize {
+  height: 500px;
+  width: 500px;
 }
