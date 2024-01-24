@@ -10,3 +10,16 @@
 .uranus {
   padding-right: 1.25rem;
 }
+
+body {
+  background-image: url("../planets/space.jpg");
+  background-size: cover;
+}
+
+body,
+#root,
+#pageLayout,
+#pageLayoutContainer,
+#planetContainer {
+  height: 100svh;
+}
