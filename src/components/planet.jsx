@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import getImageUrl from "../getImageUrl.js";
 
 const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -73,10 +74,7 @@ const Planet = () => {
             </span>
           </section>
           <section className="w-1/2 flex justify-center">
-            <img
-              src={`../../planets/${planetName}.png`}
-              className="planetSize"
-            ></img>
+            <img src={getImageUrl(planetName)} className="planetSize"></img>
           </section>
         </section>
       </div>
